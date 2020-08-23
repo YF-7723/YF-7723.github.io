@@ -257,7 +257,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-08-23 11:43:07 / 修改时间：17:32:53" itemprop="dateCreated datePublished" datetime="2020-08-23T11:43:07+08:00">2020-08-23</time>
+              <time title="创建时间：2020-08-23 11:43:07 / 修改时间：20:31:24" itemprop="dateCreated datePublished" datetime="2020-08-23T11:43:07+08:00">2020-08-23</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -306,6 +306,12 @@
 <p>先给出极限的正确定义：</p>
 <script type="math/tex; mode=display">\begin{matrix} \lim \limits_{x \to c}f(x)=L \in \mathbb{R}\\ 指，对任意的\epsilon>0, 存在 \delta>0 使得，只要0<|x-c|<\delta都有\\|f(x) - L|<\epsilon.\end{matrix}</script><p>这个不讲人话的东西叫做$\epsilon-\delta$语言……下面对这个东西进行拆分</p>
 <script type="math/tex; mode=display">\begin{matrix}\lim\limits_{x\to c} = L \in \mathbb{R}\end{matrix}</script><p>显而易见，他表示当$x$接近于$a$时，$f(x)$的值就会极其接近$L$，但有意思的是，这与$f(x)$在$a$处的取值无关（也就是说，即使$f(x)$在$a$处无意义，但它的极限仍然为$L$，不理解也没关系，在后面会进行详解）</p>
+<p>那么，后面那句话是什么意思呢？</p>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/8xhx1pl3.png" alt="f(x)=x的函数图像"></p>
+<p>在这个图中，我们可以看到，对于每一个$x \in (c-\delta,c)\cup(c,c+\delta)$都有其对应的函数值$f(x)\in(L - \epsilon,L)\cup(L,L+\epsilon)$ ，这就是上面那句非人话的解释。</p>
+<p>有没有好奇为什么不取到$c$这个值呢？这涉及到极限的定义，无限接近但并不相等，函数在$c$处的极限与函数在$c$处的取值无关，只与$c$周围$x$的函数有关。</p>
+<p>有趣吗？不与函数在$c$处的取值有关，只与函数在$c$左右的趋势有关。</p>
+<p>既然说完</p>
 
       
     </div>
@@ -609,6 +615,59 @@
 
 
   
+
+  
+      <script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              const target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      const script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
