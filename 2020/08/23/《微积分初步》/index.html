@@ -22,16 +22,16 @@
     var CONFIG = {"hostname":"github.com","root":"/","scheme":"Pisces","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
 
-  <meta name="description" content="序章 微积分，雅致而又完美。 微积分在高中学习中是不会考的，也就只有在数学选修三中最后一章会讲导数，但只涉猎了最最基础的一部分。 所以嘛qwq学习全凭爱好，如果要继续向前，他将会成为你最大的助力。 由于本人也在学习微积分，所以这篇文章会不定期更新，大概一天一更吧，大概吧（人类的本质是鸽子）。 写下这篇文章呢，为了我，也为了你，都有吧，希望我不要去遗忘，也希望你会有收获~ 谨以此记——不要忘记自己所">
+  <meta name="description" content="序章微积分，雅致而又完美。 微积分在高中学习中是不会考的，也就只有在数学选修三中最后一章会讲导数，但只涉猎了最最基础的一部分。 所以嘛qwq学习全凭爱好，如果要继续向前，他将会成为你最大的助力。 由于本人也在学习微积分，所以这篇文章会不定期更新，大概一天一更吧，大概吧（人类的本质是鸽子）。 写下这篇文章呢，为了我，也为了你，都有吧，希望我不要去遗忘，也希望你会有收获~ 谨以此记——不要忘记自己所怀">
 <meta property="og:type" content="article">
 <meta property="og:title" content="《微积分初步》">
 <meta property="og:url" content="https://github.com/YF-7723/YF-7723.github.io/2020/08/23/%E3%80%8A%E5%BE%AE%E7%A7%AF%E5%88%86%E5%88%9D%E6%AD%A5%E3%80%8B/index.html">
 <meta property="og:site_name" content="Whale&#39;s dream">
-<meta property="og:description" content="序章 微积分，雅致而又完美。 微积分在高中学习中是不会考的，也就只有在数学选修三中最后一章会讲导数，但只涉猎了最最基础的一部分。 所以嘛qwq学习全凭爱好，如果要继续向前，他将会成为你最大的助力。 由于本人也在学习微积分，所以这篇文章会不定期更新，大概一天一更吧，大概吧（人类的本质是鸽子）。 写下这篇文章呢，为了我，也为了你，都有吧，希望我不要去遗忘，也希望你会有收获~ 谨以此记——不要忘记自己所">
+<meta property="og:description" content="序章微积分，雅致而又完美。 微积分在高中学习中是不会考的，也就只有在数学选修三中最后一章会讲导数，但只涉猎了最最基础的一部分。 所以嘛qwq学习全凭爱好，如果要继续向前，他将会成为你最大的助力。 由于本人也在学习微积分，所以这篇文章会不定期更新，大概一天一更吧，大概吧（人类的本质是鸽子）。 写下这篇文章呢，为了我，也为了你，都有吧，希望我不要去遗忘，也希望你会有收获~ 谨以此记——不要忘记自己所怀">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/8xhx1pl3.png">
 <meta property="article:published_time" content="2020-08-23T03:43:07.042Z">
-<meta property="article:modified_time" content="2020-08-23T12:31:24.451Z">
+<meta property="article:modified_time" content="2020-08-23T12:41:36.508Z">
 <meta property="article:author" content="鲸与梦之歌">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.luogu.com.cn/upload/image_hosting/8xhx1pl3.png">
@@ -161,7 +161,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -173,6 +173,7 @@
 
       <!--noindex-->
       <section class="post-toc-wrap sidebar-panel">
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BA%8F%E7%AB%A0"><span class="nav-number">1.</span> <span class="nav-text">序章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E6%9E%81%E9%99%90"><span class="nav-number">2.</span> <span class="nav-text">第一章：极限</span></a></li></ol></div>
       </section>
       <!--/noindex-->
       
@@ -261,7 +262,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-08-23 11:43:07 / 修改时间：20:31:24" itemprop="dateCreated datePublished" datetime="2020-08-23T11:43:07+08:00">2020-08-23</time>
+              <time title="创建时间：2020-08-23 11:43:07 / 修改时间：20:41:36" itemprop="dateCreated datePublished" datetime="2020-08-23T11:43:07+08:00">2020-08-23</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -296,16 +297,14 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>序章</p>
-<p>微积分，雅致而又完美。</p>
+        <h2 id="序章"><a href="#序章" class="headerlink" title="序章"></a>序章</h2><p>微积分，雅致而又完美。</p>
 <p>微积分在高中学习中是不会考的，也就只有在数学选修三中最后一章会讲导数，但只涉猎了最最基础的一部分。</p>
 <p>所以嘛qwq学习全凭爱好，如果要继续向前，他将会成为你最大的助力。</p>
 <p>由于本人也在学习微积分，所以这篇文章会不定期更新，大概一天一更吧<del>，大概吧（人类的本质是鸽子）</del>。</p>
 <p>写下这篇文章呢，为了我，也为了你，都有吧，希望我不要去遗忘，也希望你会有收获~</p>
 <p>谨以此记——不要忘记自己所怀的这份初心</p>
 <p>以下的内容会非常难，毕竟这是高数要学的……（建议准备几张打草纸）</p>
-<p>第一章：极限</p>
-<p>在网上查阅了大量资料<del>（严重怀疑自己掉头发了）</del>，发现大多数解释都是偏难，还有根本不正确的。我打算尽量以最通俗的说法来论述极限这一概念<del>（虽说也很难以理解就是了）</del></p>
+<h2 id="第一章：极限"><a href="#第一章：极限" class="headerlink" title="第一章：极限"></a>第一章：极限</h2><p>在网上查阅了大量资料<del>（严重怀疑自己掉头发了）</del>，发现大多数解释都是偏难，还有根本不正确的。我打算尽量以最通俗的说法来论述极限这一概念<del>（虽说也很难以理解就是了）</del></p>
 <p>我们在之前的学习中，常常会遇到一些极限的思想，但那些说法终究是不严谨的。</p>
 <p>先给出极限的正确定义：</p>
 <script type="math/tex; mode=display">\begin{matrix} \lim \limits_{x \to c}f(x)=L \in \mathbb{R}\\ 指，对任意的\epsilon>0, 存在 \delta>0 使得，只要0<|x-c|<\delta都有\\|f(x) - L|<\epsilon.\end{matrix}</script><p>这个不讲人话的东西叫做$\epsilon-\delta$语言……下面对这个东西进行拆分</p>
@@ -315,7 +314,7 @@
 <p>在这个图中，我们可以看到，对于每一个$x \in (c-\delta,c)\cup(c,c+\delta)$都有其对应的函数值$f(x)\in(L - \epsilon,L)\cup(L,L+\epsilon)$ ，这就是上面那句非人话的解释。</p>
 <p>有没有好奇为什么不取到$c$这个值呢？这涉及到极限的定义，无限接近但并不相等，函数在$c$处的极限与函数在$c$处的取值无关，只与$c$周围$x$的函数有关。</p>
 <p>有趣吗？不与函数在$c$处的取值有关，只与函数在$c$左右的趋势有关。</p>
-<p>既然说完</p>
+<p>在说完定义后，我们再来说一下极限的适用范围，究竟什么情况下，才存在极限</p>
 
     </div>
 
